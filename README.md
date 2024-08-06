@@ -24,6 +24,9 @@ uv pip install -r requirements.txt
 ```
 
 # Change cuda version with update-alternatives
+
+reference_link: https://medium.com/@yushantripleseven/managing-multiple-cuda-cudnn-installations-ba9cdc5e2654
+
 set symbolic link in **~/.bashrc**
 
 ```
