@@ -22,3 +22,12 @@ torchaudio
 ```
 uv pip install -r requirements.txt
 ```
+
+# Change cuda version with update-alternatives
+set symbolic link in **~/.bashrc**
+
+```
+export PATH=/usr/local/cuda/bin:$PATH
+export CUDA_HOME=/usr/local/cuda
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+```
