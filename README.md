@@ -8,6 +8,35 @@ Reference by: [Managing Multiple CUDA + cuDNN Installations](https://medium.com/
 ## Install CUDA
 Download CUDA Installer [Download Link](https://developer.nvidia.com/cuda-toolkit-archive)
 
+* Check GPU driver version and CUDA upper limit
+    ```console
+    user@admin1:~$ nvidia-smi
+	+-----------------------------------------------------------------------------------------+
+	| NVIDIA-SMI 560.28.03              Driver Version: 560.28.03      CUDA Version: 12.6     |
+	|-----------------------------------------+------------------------+----------------------+
+	| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+	| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+	|                                         |                        |               MIG M. |
+	|=========================================+========================+======================|
+	|   0  NVIDIA GeForce RTX 3070        Off |   00000000:01:00.0  On |                  N/A |
+	|  0%   55C    P8             19W /  220W |     569MiB /   8192MiB |      0%      Default |
+	|                                         |                        |                  N/A |
+	+-----------------------------------------+------------------------+----------------------+
+		                                                                                     
+	+-----------------------------------------------------------------------------------------+
+	| Processes:                                                                              |
+	|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+	|        ID   ID                                                               Usage      |
+	|=========================================================================================|
+	|    0   N/A  N/A      1412      G   /usr/lib/xorg/Xorg                            277MiB |
+	|    0   N/A  N/A      1949      G   /usr/bin/gnome-shell                           79MiB |
+	|    0   N/A  N/A      6801      G   ...93,262144 --variations-seed-version         87MiB |
+	|    0   N/A  N/A    153603      G   ...irefox/4698/usr/lib/firefox/firefox          0MiB |
+	|    0   N/A  N/A    222999      G   ...erProcess --variations-seed-version         53MiB |
+	+-----------------------------------------------------------------------------------------+
+    ```
+    * My driver version is `560.28.03` and the highest cudatoolkit version I can install is `12.6`
+
 * Check Architecture
     ```console
     user@admin1:~$ uname -m
