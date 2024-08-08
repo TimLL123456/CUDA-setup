@@ -1,4 +1,6 @@
-# CUDA Setup Guideline
+# CUDA Setup Reminder
+
+Reference by: [Managing Multiple CUDA + cuDNN Installations](https://medium.com/@yushantripleseven/managing-multiple-cuda-cudnn-installations-ba9cdc5e2654)
 
 ## Dowload CUDA Installer
 CUDA Installer [Download Link](https://developer.nvidia.com/cuda-toolkit-archive)
